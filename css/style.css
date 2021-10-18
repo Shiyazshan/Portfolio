@@ -1,0 +1,1658 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+	background: url(../images/bg_banner.jpg) no-repeat fixed 100%;
+}
+input,textarea,select{
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #1C2C40;
+}
+h1{
+	font-family: 'Montserrat', sans-serif;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "Circular-Std-Regular", Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+@font-face {
+	font-family: 'Circular-Std-Regular';
+	src:url('../fonts/CircularStd-Regular.woff2') format('woff2');
+	src:url('../fonts/CircularStd-Regular.woff') format('woff');
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Circular-Std-Bold';
+    src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Bold.woff") format("woff");
+    font-style: normal
+}
+::placeholder {
+  color:#c2c6ce;
+}
+#spotlight { 
+	height: 100vh;
+	margin: auto 0;  
+	background: url(../images/bg_image_1.jpg) no-repeat;
+	background-size: cover; 
+}
+
+#spotlight section.container { 
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+	filter: contrast(0.6);
+	
+}
+#spotlight section.container  section.wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#spotlight section.container  header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	background: #969696;
+	position: fixed;
+	top: 20px;
+	width: 100%;
+	height: 100px;
+	background: rgba(114, 111, 111, 0.466);
+	padding: 20px 100px;
+
+}
+
+#spotlight section.container header div.left { 
+
+}
+
+#spotlight section.container header div.left h1 { 
+	
+}
+#spotlight header div.left h1 .logo { 
+	color: white;
+	
+}
+#spotlight section.container header div.middle { 
+	
+}
+
+#spotlight section.container header div.middle ul { 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	
+}
+
+#spotlight section.container header div.middle ul li { 
+	margin-right: 15px;
+	
+}
+#spotlight section.container header div.middle ul li:last-child{
+	margin-right: 0;
+}
+
+#spotlight section.container header div.middle ul li a { 
+	color: white;
+}
+#spotlight section.container header div.middle ul li a:hover{
+	border-bottom: 1px solid #2a60f6;
+	color: #2a60f6;
+	transition: 0.3s ease-in-out;
+	transform: scale(1.1);
+}
+
+#spotlight section.container header div.right { 
+
+}
+
+#spotlight section.container header div.right .button { 
+	color: white;
+	background: #2a60f6;
+	padding: 20px;
+	border-radius: 50%;
+	display: block;
+}
+#spotlight section.container header div.right .button:hover{
+	transition: 0.3s ease-in-out;
+	transform: scale(1.1);
+}
+
+#spotlight section.container section.wrapper { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+#spotlight section.container section.wrapper  small {
+	color: white;
+	font-size: 26px;
+	margin-bottom: 15px;
+}
+
+#spotlight section.container section.wrapper h1 {
+	color: white;
+	font-size: 45px;	
+}
+#spotlight section.container section.wrapper h1 b{
+	color: #2a60f6;	
+}
+
+#spotlight section.container section.wrapper a.text { 
+	color: #2a5ff3;
+    background: #363d56;
+    padding: 12px 16px;
+    border-radius: 14px;
+	font: weight 900px; 
+	margin-top: 20px;
+}
+#profile{	
+	background: #fff;
+}
+#profile section.wrapper div.container{
+	padding-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 100px;
+}
+#profile section.wrapper div.container div.left{
+	width: 45%;
+}
+#profile section.wrapper div.container div.left div.img-container{
+	margin: 0 auto;
+	width: 50%;
+	position: relative;
+	z-index: 1;
+}	
+#profile section.wrapper div.container div.left div.img-container img{
+	width: 100%;
+	display: block;
+	
+	
+}
+#profile section.wrapper div.container div.left div.img-container div.box{
+	width: 100%;
+	border: 6px solid #2a60f6;
+	height: 100%;
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	z-index: -2;
+}
+#profile section.wrapper div.container div.right{
+	width: 55%;
+}
+#profile section.wrapper div.container div.right h1{
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+#profile section.wrapper div.container div.right h6{
+	font-size: 16px;
+	color: #2a60f6;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+#profile section.wrapper div.container div.right p{
+	color: #191a1a7a;
+	margin-bottom: 10px;
+}
+#profile section.wrapper div.container div.right ul{
+	margin-left: 22px;
+	position: relative;
+}
+#profile section.wrapper div.container div.right ul:before{
+	content: '';
+	background: #e8e4e4;
+	position: absolute;
+	width: 2px;
+	height: 100px;
+	display: block;
+	left: -16px;
+	top: 10px;
+}
+#profile section.wrapper div.container div.right ul li{
+	list-style-type: circle;
+	margin-bottom: 15px;
+	position: relative;
+}
+#profile section.wrapper div.container div.right ul li::before{
+	content: '';
+	display: block;
+	background: #fff;
+	border: 3px solid #2a60f6;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	position: absolute;
+	top: 3px;
+	left: -23px;
+}
+#profile section.wrapper div.container div.right ul li{
+	list-style: none;
+}
+#profile section.wrapper div.container div.right ul li h4 b{
+	font-weight: 600;	
+}
+
+#profile section.wrapper div.container div.right a{
+
+}
+#profile section.wrapper div.container div.right a.button{
+	color: #2a60f6;
+	border: 2px solid;
+	padding: 8px 20px;
+	border-radius: 8px;
+	display: inline-block;
+	background-image: linear-gradient(to left,
+    transparent,
+    transparent 50%,
+    #2a60f6 50%,
+    #2a60f6);
+  	background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+}
+#profile section.wrapper div.container div.right a.button:hover{
+	background-position: 0 0;
+	color:white;
+}
+#myskills {
+
+background: white;
+}
+
+#myskills section.wrapper { 
+
+}
+
+#myskills section.wrapper div.top { 
+	text-align: center;
+	margin: auto 0;
+
+}
+#myskills section.wrapper div.top h1 { 
+	font-weight: 900;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+#myskills section.wrapper section.container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	padding-bottom: 120px;
+}
+
+#myskills section.wrapper section.container div.left {
+	width: 50%;
+}
+#myskills section.wrapper section.container div.left div.item{
+	margin-bottom: 12px;
+}
+#myskills section.wrapper section.container div.left div.item h5{
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+#myskills section.wrapper section.container div.left div.item h4{
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+#myskills section.wrapper section.container div.left div.item div.skillbar{
+	border: 3px solid #2a60f6;
+	width: 100%;
+	border-radius: 10px;
+	padding: 1px;
+}
+#myskills section.wrapper section.container div.left div.item div.skillbar div.percentage{
+	background: #2a60f6;
+	width: 86%;
+	border-radius: 10px;
+	text-align: center;
+	color: white;
+	background-image: linear-gradient(to left,
+    transparent,
+    transparent 50%,
+    #e5ff00 50%,
+    #e5ff00);
+ 	 background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+}
+#myskills section.wrapper section.container div.left div.item div.skillbar div.percentage:hover{
+	background-position: 0 0;
+	color:black;
+}
+#myskills section.wrapper section.container div.left div.item div.skillbar div.percentage small{
+
+}
+#myskills section.wrapper section.container div.left div.item div.skillbar div.php{
+	background: #2a60f6;
+	width: 80%;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	background-image: linear-gradient(to left,
+    transparent,
+    transparent 50%,
+    #e5ff00 50%,
+    #e5ff00);
+  	background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+}
+#myskills section.wrapper section.container div.left div.item div.skillbar div.php:hover{
+	background-position: 0 0;
+	color:black;
+}
+#myskills section.wrapper section.container div.left div.item div.skillbar div.html{
+	background: #2a60f6;
+	width: 100%;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	background-image: linear-gradient(to left,
+    transparent,
+    transparent 50%,
+    #e5ff00 50%,
+    #e5ff00);
+  	background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+}
+#myskills section.wrapper section.container div.left div.item div.skillbar div.html:hover{
+	background-position: 0 0;
+	color:black;
+}
+#myskills section.wrapper section.container div.left div.item div.skillbar div.python{
+	background: #2a60f6;
+	width: 90%;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	background-image: linear-gradient(to left,
+    transparent,
+    transparent 50%,
+    #e5ff00 50%,
+    #e5ff00);
+  	background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+}
+#myskills section.wrapper section.container div.left div.item div.skillbar div.python:hover{
+	background-position: 0 0;
+	color:black;
+}
+#myskills section.wrapper section.container div.right{
+	width: 50%;
+	margin-left: 63px;
+}
+#myskills section.wrapper section.container div.right div.item{
+	margin-bottom: 12px;
+}
+#myskills section.wrapper section.container div.right div.item h4{
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+#myskills section.wrapper section.container div.right div.item h5{
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+#myskills section.wrapper section.container div.right div.item div.skillbar{
+	border: 3px solid #2a60f6;
+	width: 100%;
+	border-radius: 10px;
+	padding: 1px;
+}
+#myskills section.wrapper section.container div.right div.item div.skillbar div.design{
+	background: #2a60f6;
+	width: 92%;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	background-image: linear-gradient(to left,
+    transparent,
+    transparent 50%,
+    #e5ff00 50%,
+    #e5ff00);
+  	background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+}
+#myskills section.wrapper section.container div.right div.item div.skillbar div.design:hover{
+	background-position: 0 0;
+	color:black;
+}
+#myskills section.wrapper section.container div.right div.item div.skillbar div.web{
+	background: #2a60f6;
+	width: 99%;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	background-image: linear-gradient(to left,
+    transparent,
+    transparent 50%,
+    #e5ff00 50%,
+    #e5ff00);
+  	background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+}
+#myskills section.wrapper section.container div.right div.item div.skillbar div.web:hover{
+	background-position: 0 0;
+	color:black;
+}
+#myskills section.wrapper section.container div.right div.item div.skillbar div.logo{
+	background: #2a60f6;
+	width: 79%;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	background-image: linear-gradient(to left,
+    transparent,
+    transparent 50%,
+    #e5ff00 50%,
+    #e5ff00);
+  	background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+}
+#myskills section.wrapper section.container div.right div.item div.skillbar div.logo:hover{
+	background-position: 0 0;
+	color:black;
+}
+#education{
+	background: white;
+}
+#education section.wrapper{
+
+}
+#education section.wrapper section.items{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#education section.wrapper section.items div.left{	
+	width: 37%;
+}
+#education section.wrapper section.items div.left h3{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+#education section.wrapper section.items div.left div.item{
+
+}
+#education section.wrapper section.items div.left div.item span.current h2{
+	display: inline-block;
+	background: #2a60f6;
+	color: white;
+	padding: 6px 56px 6px 13px;
+	border-radius: 20px 0px 46px 20px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	position: relative;
+}
+#education section.wrapper section.items div.left div.item span.current h2::before{
+	content: '';
+	display: block;
+	background: #2a60f6;
+	border: 9px double beige;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	position: absolute;
+	left: -44px;
+	top: 0px;
+}
+#education section.wrapper section.items div.left div.item h2{
+	display: inline-block;
+	background: #747474;
+	color: white;
+	padding: 6px 56px 6px 13px;
+	border-radius: 20px 0px 46px 20px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	position: relative;
+}
+#education section.wrapper section.items div.left div.item h2::before{
+	content: '';
+	display: block;
+	background: #747474;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	position: absolute;
+	left: -35px;
+	top: 9px;
+}
+#education section.wrapper section.items div.left div.item div.content{
+	background: #f4f5f8;
+	padding: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+#education section.wrapper section.items div.left div.item div.content::before{
+	content: '';
+	background: #e8e4e4;
+	position: absolute;
+	width: 2px;
+	height: 197px;
+	display: block;
+	left: -28px;
+	top: -10px;
+}
+#education section.wrapper section.items div.left div.item div.content h4{
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+#education section.wrapper section.items div.left div.item div.content small{
+	margin-bottom: 10px;
+	color: #2a60f6;
+	font-weight: 500;
+}
+#education section.wrapper section.items div.left div.item div.content p{
+	width: 90%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#education section.wrapper section.items div.left div.item div.content.last::before{
+	height: 168px;
+}
+#education section.wrapper section.items div.right{
+	width: 37%;
+}
+#education section.wrapper section.items div.right h3{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+#education section.wrapper section.items div.right div.item{
+	width: 100%;
+}
+#education section.wrapper section.items div.right div.item span.current h2{
+	display: inline-block;
+	background: #2a60f6;
+	color: white;
+	padding: 6px 26px 6px 13px;
+	border-radius: 20px 0px 46px 20px;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+#education section.wrapper section.items div.right div.item span.current h2::before{
+	content: '';
+	display: block;
+	background: #2a60f6;
+	border: 9px double beige;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	position: absolute;
+	left: -44px;
+	top: 0px;
+}
+#education section.wrapper section.items div.right div.item h2{
+	display: inline-block;
+	background: #747474;
+	color: white;
+	padding: 6px 56px 6px 13px;
+	border-radius: 20px 0px 46px 20px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	position: relative;
+}
+#education section.wrapper section.items div.right div.item h2::before{
+	content: '';
+	display: block;
+	background: #747474;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	position: absolute;
+	left: -35px;
+	top: 9px;
+}
+#education section.wrapper section.items div.right div.item div.content{
+	background: #f4f5f8;
+	padding: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+#education section.wrapper section.items div.right div.item div.content.last::before{
+	height: 168px;
+}
+#education section.wrapper section.items div.right div.item div.content::before{
+	content: '';
+	background: #e8e4e4;
+	position: absolute;
+	width: 2px;
+	height: 197px;
+	display: block;
+	left: -28px;
+	top: -10px;
+}
+#education section.wrapper section.items div.right div.item div.content h4{
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+#education section.wrapper section.items div.right div.item div.content small{
+	margin-bottom: 10px;
+	color: #2a60f6;
+	font-weight: 500;
+}
+#education section.wrapper section.items div.right div.item div.content p{
+	width: 90%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#service{
+	background: #fff;
+}
+#service section.wrapper{
+	text-align: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+#service section.wrapper h4{
+	background: #dfe7fd;
+	display: inline-block;
+	color: #2a60f6;
+	padding: 8px 26px;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+#service section.wrapper h1{
+	font-size: 30px;
+	font-weight: 800;
+	margin-bottom: 70px;
+}
+#service section.wrapper ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+#service section.wrapper ul li{
+	width: 33.33%;
+	margin-right: 30px;
+}
+#service section.wrapper ul li div.image-container{
+	width: 82px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	background: #f4f5f8;
+	padding: 28px;	
+	border-radius: 50%;
+}
+#service section.wrapper ul li div.image-container img{
+	display: block;
+	width: 100%;
+}
+#service section.wrapper ul li h2{
+	color: #2a60f6;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+#service section.wrapper ul li p{
+ 	width: 90%;
+}
+#usercount{
+	padding: 8%;
+	background: rgb(32 15 15 / 44%);
+}
+#usercount section.wrapper{
+
+}
+#usercount section.wrapper div.container{
+
+}
+#usercount section.wrapper div.container ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+#usercount section.wrapper div.container ul li{
+	width: 33.33%;
+	margin-right: 30px;
+	color: white;
+}
+#usercount section.wrapper div.container ul li:last-child{
+	margin-right: 0;
+}
+#usercount section.wrapper div.container ul li h3{
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 5px;
+	text-align: center;
+}
+#usercount section.wrapper div.container ul li h5{
+	text-align: center;
+}
+#portfolio{
+	background: #fff;
+}
+#portfolio section.wrapper{
+
+}
+#portfolio section.wrapper section.container{
+	
+}
+#portfolio section.wrapper section.container div.top{
+	text-align: center;
+	padding: 4%;
+	width: 48%;
+	margin: 0 auto;
+}
+#portfolio section.wrapper section.container div.top h2{
+	display: inline-block;
+    background: #dfe7fd;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #2a60f6;
+}	
+#portfolio section.wrapper section.container div.top h1{
+    font-size: 35;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#portfolio section.wrapper section.container div.top ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+#portfolio section.wrapper section.container div.top ul li{
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+#portfolio section.wrapper section.container div.top ul li div.border h4{
+	font-size: 14px;
+	padding: 4px 10px;
+	border-radius: 20px;
+	color: #7c7c7c;
+	display: block;
+}
+#portfolio section.wrapper section.container div.top ul li div.border{
+	padding: 2px;
+	border: 1px solid #7c7c7c;
+	border-radius: 20px;
+}
+#portfolio section.wrapper section.container div.top ul li:hover div.border h4 {
+	background: #2a60f6;
+	color: white;
+}
+#portfolio section.wrapper section.container div.bottom{
+ 	text-align: center;
+}
+#portfolio section.wrapper section.container div.bottom ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+#portfolio section.wrapper section.container div.bottom ul li{
+	width: 30%;
+	margin-bottom: 20px;
+}
+
+#portfolio section.wrapper section.container div.bottom ul li div.box{
+	width: 80%;
+	position: relative;
+}
+#portfolio section.wrapper section.container div.bottom ul li div.box img{
+	display: block;
+	width: 100%;
+	border-radius: 8px;
+}
+#portfolio section.wrapper section.container div.bottom ul li div.box:hover .text{
+	opacity: 1;
+	cursor: pointer;
+}
+#portfolio section.wrapper section.container div.bottom ul li div.box div.text{
+	background: #323131;
+	color: white;
+	padding: 15px;
+	text-align: left;
+	position: absolute;
+	bottom: 0%;
+	width: 100%;
+	transition: .3s ease-in;
+	opacity: 0;
+}
+#portfolio section.wrapper section.container div.bottom ul li div.box div.text h2{
+	color: #2a60f6;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+#portfolio section.wrapper section.container div.bottom ul li div.box div.text h5{
+
+}
+#portfolio section.wrapper section.container div.bottom a{
+
+}
+#portfolio section.wrapper section.container div.bottom a.button{
+	text-align: center;
+	display: inline-block;
+	background: #2a60f6;
+	color: white;
+	padding: 8px 26px;
+	border-radius: 8px;
+}
+#portfolio section.wrapper section.container div.bottom a.button:hover{
+	transition: 0.3s ease-in-out;
+	transform: scale(1.1);
+}
+#testimonial{
+	background: #fff;
+}
+#testimonial section.wrapper{
+
+}
+#testimonial section.wrapper section.container{
+	padding-top: 250px;
+	padding-bottom: 250px;
+}
+#testimonial section.wrapper section.container h1{
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 40px;
+	font-weight: 700;
+}
+#testimonial section.wrapper section.container div.items{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+#testimonial section.wrapper section.container div.items div.left{
+
+width: 28%;
+}
+#testimonial section.wrapper section.container div.items div.left div.box {
+	height: 319px;
+	width: 365px;
+	background: url(../images/testimonials/testimonials_1.jpg) no-repeat;
+	background-size: cover;
+	margin-right: 20px;
+	border-radius: 8px;
+} 
+#testimonial section.wrapper section.container div.items div.left div.box img{
+	width: 100%;
+	display: block;
+}
+#testimonial section.wrapper section.container div.items div.right{
+	text-align: left;
+	width: 33%;
+	padding: 20px;
+}
+#testimonial section.wrapper section.container div.items div.right p{
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+#testimonial section.wrapper section.container div.items div.right div.set{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+#testimonial section.wrapper section.container div.items div.right div.set div.icon{
+	background: url(../images/testimonials/testimonials_1.jpg) no-repeat;
+	width: 76px;
+	height: 76px;
+	background-size: cover;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+#testimonial section.wrapper section.container div.items div.right div.set div.icon img{
+
+}
+#testimonial section.wrapper section.container div.items div.right div.set div.name{
+
+}
+#testimonial section.wrapper section.container div.items div.right div.set div.name h3{
+	margin-bottom: 5px;
+}
+#testimonial section.wrapper section.container div.items div.right div.set div.name small{
+	color: #899197;
+}
+#company{
+	background: #171925;
+}
+#company section.wrapper{
+
+}
+#company section.wrapper section.container{
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+#company section.wrapper section.container ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	flex-wrap: wrap;
+}
+#company section.wrapper section.container ul li{
+	width: 25%;
+	border-left: 2px solid #272c39;
+}
+#company section.wrapper section.container ul li:first-child{
+	border: none;
+}
+#company section.wrapper section.container ul li:nth-child(5){
+	border: none;
+	border-top: 2px solid #272c39 ;
+}
+#company section.wrapper section.container ul li:nth-child(6){
+	border-top: 2px solid #272c39 ;
+}
+#company section.wrapper section.container ul li:nth-child(7){
+	border-top: 2px solid #272c39 ;
+}
+#company section.wrapper section.container ul li:nth-child(8){
+	border-top: 2px solid #272c39 ;
+}
+#company section.wrapper section.container ul li div.box{
+	width: 60%;
+	padding: 40px;
+	margin: 0 auto;
+	
+}
+#company section.wrapper section.container ul li div.box a{
+
+}
+#company section.wrapper section.container ul li div.box a img{
+	width: 100%;
+	display: block;
+	filter: grayscale(1) brightness(2.5);
+}
+#company section.wrapper section.container ul li:hover div.box a img{
+	transition: 0.3s ease-in-out;
+	transform: scale(1.3);
+}
+#blog{
+	background: #fff;
+	padding: 5%;
+}
+#blog section.wrapper{
+	text-align: center;
+}
+#blog section.wrapper h6{
+	background: #dfe7fd;
+	color: #3760f6;
+	padding: 12px 30px;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+#blog section.wrapper h1{
+	font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+#blog section.wrapper div.items{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#blog section.wrapper div.items div.item{
+	margin-right: 50px;
+	box-shadow: 0px 2px 22px #727881;
+}
+#blog section.wrapper div.items div.item:hover{
+	transition: 0.3s ease-in-out;
+	transform: scale(1.1);
+}
+#blog section.wrapper div.items div.item img{
+	width: 100%;
+	display: block;
+}
+#blog section.wrapper div.items div.item div.box{
+	text-align: left;
+	padding: 10px;
+	padding-top: 20px;
+}
+#blog section.wrapper div.items div.item div.box h5{
+	color:#2a60f6;
+	font-size: 18px;
+    font-weight: 600;
+}
+#blog section.wrapper div.items div.item div.box h2{
+	margin-top: 6px;
+	font-weight: 600;
+	margin-bottom: 10;
+	color: #727881;
+	font-size: 20px;
+}
+#blog section.wrapper div.items div.item div.box small{
+	color: #727881;
+}
+#blog section.wrapper a{
+
+}
+#blog section.wrapper a.button{
+	display: inline-block;
+	padding: 10px 24px;
+	background: #2a60f6;
+	color: white;
+	border-radius: 8px;
+	margin-top: 30px;
+	box-shadow: 0px 5px 19px #8c8e9e;
+}
+#blog section.wrapper a.button:hover{
+	transition: 0.3s ease-in-out;
+	transform: scale(1.1);
+}
+#contact{
+	background: #fff;
+	padding: 4%;
+}
+#contact section.container{	
+	text-align: center;
+}
+#contact section.container h6{
+	font-size: 16px;
+	background: #dfe7fd;
+	display: inline-block;
+	color: #2a60f6;
+	padding: 8px 24px;
+	border-radius: 18px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+#contact section.container h1{
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+#contact section.container div.items{
+	display: flex;
+	align-items: center;
+	
+}
+#contact section.container div.items div.left{
+	width: 100%;
+	margin-right: 50px;
+}
+#contact section.container div.items div.left div.container{
+	
+}
+#contact section.container div.items div.left div.container img{
+	width: 100%;
+	display: block;
+}
+#contact section.container div.items div.right form{
+	
+}
+
+#contact section.container div.items div.right form input{
+	padding: 4px;
+}
+#contact section.container div.items div.right form input.name[type=text]{
+	border: 2px solid #c2c6ce;
+	width: 89%;
+	border-radius: 6px;
+	padding: 14px;
+	margin-bottom: 10px;
+}
+#contact section.container div.items div.right form input.subject[type=text]{
+	border: 2px solid #c2c6ce;
+	width: 44%;
+	padding: 14px;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+#contact section.container div.items div.right form input[type=submit]{
+	cursor: pointer;
+	background: #2a60f6;
+    padding: 12 22;
+    color: white;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+#contact section.container div.items div.right form input[type=submit]:hover{
+	transition: 0.3s ease-in-out;
+	transform: scale(1.1);
+}
+#contact section.container div.items div.right form input[type=email]{
+	border: 2px solid #c2c6ce;
+	width: 44%;
+	padding: 14px;
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+#contact section.container div.items div.right form textarea{
+	border: 2px solid #c2c6ce;
+	padding: 10px;
+	width: 89%;
+	border-radius: 6px;
+}
+footer { 
+	background: #171925;
+	padding: 4%;
+}
+
+footer section.wrapper { 
+	text-align: center;
+}
+
+footer section.wrapper h1 {
+	color: #898c95;
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 26px;
+}
+
+footer section.wrapper div.middle {
+
+margin-bottom: 50px;
+}
+
+footer section.wrapper div.middle ul { 
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+}
+
+footer section.wrapper div.middle ul li {
+    margin: 0 au;
+    margin-right: 80px;
+    text-align: left;
+}
+
+footer section.wrapper div.middle ul li h2 {
+	text-align: left;
+	color: #898c95;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+footer section.wrapper div.middle ul li h2.first{
+
+}
+footer section.wrapper div.middle ul li h2.first::after{
+	content: '';
+	display: block;
+	width: 150px;
+	height: 1px;
+	background: white;
+	background: none;
+	border-bottom: 2px dashed #9497a0;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+footer section.wrapper div.middle ul li h2::after{
+	content: '';
+	display: block;
+	width: 112px;
+	height: 1px;
+	background: white;
+	background: none;
+	border-bottom: 2px dashed #9497a0;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+footer section.wrapper div.middle ul li h4{
+	color: white;
+	margin-bottom: 10;
+	font-size: 20px;
+}
+footer section.wrapper div.middle ul li a{
+	color: white;
+}
+
+footer section.wrapper div.middle ul li address {
+	width: 64%;
+	text-align: left;
+	color: white;
+	font-size: 20px;
+}
+
+footer section.wrapper div.bottom { 
+
+}
+
+footer section.wrapper div.bottom h3 {
+	color: #898c95;
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+footer section.wrapper div.bottom form {
+	margin-bottom: 30px;
+}
+
+footer section.wrapper div.bottom form input[type=email] {
+	background: #202334;
+	padding: 16px 20px;
+	width: 30%;
+	border-radius: 75;
+	border-radius: 4px;
+}
+footer section.wrapper div.bottom form input[type=submit]{
+	background: #2a60f6;
+	color: white;
+	padding: 16px 30px;
+	border-radius: 4px;
+	margin-left: -10px;
+	cursor: pointer;
+	
+}
+footer section.wrapper div.bottom form input[type=submit]:hover{
+	transition: 0.4s ease-in-out;
+	transform: scale(1.1);
+}
+
+footer section.wrapper div.bottom small { 
+	color: #898c95;
+	font-size: 16px;
+}
+footer section.wrapper div.bottom small span{
+	color: red;
+	font-size: 20px;
+}
+
+footer section.wrapper div.bottom small a { 
+	color: #2a60f6;
+}
+@media all and (max-width:1280px){
+	#testimonial section.wrapper section.container div.items{
+		justify-content: space-evenly;
+	}
+	#company section.wrapper section.container ul li{
+		border: none;
+	}
+}
+@media all and (max-width:1080px){
+	#education section.wrapper section.items div.left div.item div.content::before{
+		height: 223px;
+	}
+	#education section.wrapper section.items div.right div.item div.content::before {
+		height: 223px;
+	}
+	#education section.wrapper section.items div.left div.item div.content.last::before {
+		height: 195px;
+	}
+	#education section.wrapper section.items div.right div.item div.content.last::before {
+		height: 196px;
+	}
+	#profile section.wrapper div.container div.right ul li{
+		text-align: left;
+	}
+	#profile section.wrapper div.container div.right ul li::before {
+		left: -24px;
+	}
+	#profile section.wrapper div.container div.right ul:before {
+		left: -17px;
+	}
+	#service section.wrapper ul{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#service section.wrapper ul li {
+		width: 28%;
+		margin-right: 30px;
+		margin-bottom: 20px;
+	}
+	#company section.wrapper section.container ul li:nth-child(7){
+		border: none;
+	}
+	#company section.wrapper section.container ul li:nth-child(5){
+		border: none;
+	}
+	#company section.wrapper section.container ul li:nth-child(6){
+		border: none;
+	}
+	#company section.wrapper section.container ul li:nth-child(8){
+		border: none;
+	}
+
+}
+@media all and (max-width:980px){
+	#profile section.wrapper div.container{
+		flex-wrap: wrap;
+	}
+	#profile section.wrapper div.container div.left{
+		width: 100%;
+	}
+	#profile section.wrapper div.container div.right{
+		width: 100%;
+		margin-top: 50px;
+		text-align: center;
+	}
+	#profile section.wrapper div.container div.right ul li::before{
+		left: -26px;	
+	}
+	#profile section.wrapper div.container div.right ul:before {
+		left: -17px;
+	}
+	#testimonial section.wrapper section.container div.items{
+		flex-wrap: wrap;
+	}
+	#testimonial section.wrapper section.container div.items div.left{
+		width: 100%;
+	}
+	#testimonial section.wrapper section.container div.items div.right {
+		width: 100%;
+	}
+	#company section.wrapper section.container ul li{
+		width: 33%;
+		border: none;
+	}
+	#company section.wrapper section.container ul li {
+		width: 230px;
+	}
+	#blog section.wrapper div.items{
+		flex-wrap: wrap;
+	}
+	#contact section.container div.items{
+		flex-wrap: wrap;
+	}
+	#contact section.container div.items div.left{
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	#portfolio section.wrapper section.container div.bottom ul li{
+		width: 50%;
+	}
+@media all and (max-width:768px){
+	#spotlight section.container header div.middle ul{
+		display: none;
+	}
+	#profile section.wrapper div.container div.right ul li::before {
+		left: -26px;
+	}
+	#profile section.wrapper div.container div.right ul:before {
+		left: -17px;
+	}
+	#education section.wrapper section.items div.left div.item div.content::before {
+		height: 250px;
+	}
+	#education section.wrapper section.items div.right div.item div.content::before {
+		height: 250px;
+	}
+	#education section.wrapper section.items div.left div.item div.content.last::before {
+		height: 219px;
+	}
+	#education section.wrapper section.items div.right div.item div.content.last::before {
+		height: 223px;
+	}
+	#service section.wrapper ul li {
+		width: 44%;
+	}
+	#usercount section.wrapper div.container ul li{
+		width: unset;
+	}
+	#usercount section.wrapper div.container ul li h3 {
+		font-size: 25px;
+	}
+	#company section.wrapper section.container ul li{
+		border: none;
+	}
+	#company section.wrapper section.container ul li:nth-child(4){
+		border: none;
+	}
+	#company section.wrapper section.container ul li:nth-child(5){
+		border: none;
+	}
+	#company section.wrapper section.container ul li:nth-child(6){
+		border: none;
+	}
+	#company section.wrapper section.container ul li:nth-child(7){
+		border: none;
+	}
+	#company section.wrapper section.container ul li:nth-child(8){
+		border: none;
+	}
+	#blog section.wrapper h1{
+		font-size: 32px;
+	}
+	#blog section.wrapper div.items div.item{
+		margin-bottom: 30px;
+	}
+	footer section.wrapper div.bottom small{
+		font-size: 13px;
+	}
+	
+	footer section.wrapper div.bottom form input[type=email]{
+		width: 45%;
+	}
+}
+@media all and (max-width:640px){
+	footer section.wrapper div.middle ul li{
+		margin-right: 0;
+		width: 50%;
+	}
+	footer section.wrapper div.middle ul {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	#spotlight section.container section.wrapper h1{
+		font-size: 34px;
+	}
+	#profile section.wrapper div.container div.right ul li::before{
+		left: -26px;
+	}
+	#profile section.wrapper div.container div.right ul:before{
+		left: -17px;
+	}
+	#myskills section.wrapper section.container{
+		flex-wrap: wrap;
+	}
+	#myskills section.wrapper section.container div.right{
+		margin-left: 0;
+		width: 100%;
+	}
+	#myskills section.wrapper section.container div.left{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	#education section.wrapper section.items{
+		flex-wrap: wrap;
+	}
+	#education section.wrapper section.items div.left{
+		width: 64%;
+	}
+	#education section.wrapper section.items div.right div.item{
+		margin-left: 0;
+	}
+	#education section.wrapper section.items div.right{
+		width: 64%;
+	}
+	#portfolio section.wrapper section.container div.top {
+		width: 100%;
+	}
+	
+	#usercount section.wrapper div.container ul{
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	#usercount section.wrapper div.container ul li{
+		width: 94%;
+		margin-bottom: 20px;
+	}
+	/* #portfolio section.wrapper section.container div.top ul li{
+		width: 22%;
+	} */
+	#company section.wrapper section.container ul{
+		justify-content: center;
+	}
+	#testimonial section.wrapper section.container div.items div.left div.box{
+		height: 271px;
+		width: 271px;
+	}
+}
+@media all and (max-width:480px){
+	#spotlight section.container header div.right .button{
+		display: none;
+	}
+	#spotlight section.container header{
+		justify-content: center;
+	}
+	#spotlight section.container section.wrapper h1{
+		font-size: 22px;
+	}
+	#profile section.wrapper div.container div.right ul li::before{
+		left: -26px;
+	}
+	#profile section.wrapper div.container div.right ul:before{
+		left: -17px;
+	}
+	#service section.wrapper ul li p{
+		width: 100%;
+	}
+	/* #portfolio section.wrapper section.container div.bottom ul li{
+		width: 80%;
+	} */
+	#company section.wrapper section.container ul li div.box{
+		width: 84%;
+	}
+	footer section.wrapper div.middle ul li{
+		width: 81%;
+	}
+	footer section.wrapper div.middle ul li{
+		width: 51%;
+	}
+	footer section.wrapper div.bottom form input[type=email]{
+		width: 61%;
+	}
+}
+@media all and (max-width:360px){
+	#profile section.wrapper div.container div.right ul li::before{
+		left: 1px;
+	}
+	#profile section.wrapper div.container div.right ul:before{
+		left: 8px;
+	}
+	/* #portfolio section.wrapper section.container div.top ul li{
+		width: 77%;
+	} */
+	footer section.wrapper div.bottom form input[type=email]{
+		width: 97%;
+		margin-bottom: 10px;
+	}
+	#profile section.wrapper div.container div.right h1{
+		font-size: 26px;
+	}
+	#profile section.wrapper div.container div.right ul {
+		margin-left: 33px;
+		text-align: left;
+	}
+	#service section.wrapper ul li {
+		width: 90%;
+	}
+	#service section.wrapper ul li h2 {
+		font-size: 22px;
+	}
+	#usercount section.wrapper div.container ul li{
+		margin-right: 0;
+		width: 47%;
+	}
+	#portfolio section.wrapper section.container div.top h1 {
+		font-size: 18px;
+	}
+	#portfolio section.wrapper section.container div.top{
+		width: 100%;
+	}
+	/* #portfolio section.wrapper section.container div.top ul li {
+		width: 33%;
+		margin-right: 5px;
+	} */
+	#portfolio section.wrapper section.container div.bottom ul li{
+		margin-right: 0;
+	}
+	#company section.wrapper section.container ul li div.box {
+		width: 58%;
+	}
+	#blog section.wrapper div.items div.item{
+		margin-right: 0;
+	}
+	footer section.wrapper h1{
+		font-size: 30px;
+	}
+	#contact section.container h1 {
+		font-size: 26px;
+	}
+	#testimonial section.wrapper section.container h1 {
+		font-size: 24px;
+	}
+	#portfolio section.wrapper section.container div.bottom ul li div.box {
+		width: 100%;
+	}
+	#profile section.wrapper div.container div.right ul li::before {
+		left: -21px;
+	}
+	#profile section.wrapper div.container div.right ul:before {
+		left: -14px;
+	}
+
+}
+	
+
